@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ThinkPHP示例：视图查询</title>
+<load href="__PUBLIC__/Css/common.css" />
+ </head>
+ <body>
+ <div class="main">
+ <h3>ThinkPHP示例之视图查询：视图查询</h3>
+ <table cellpadding=2 cellspacing=2>
+ <td></td>
+	<td><hr></td>
+ </tr>
+  <volist name="list" id="vo">
+  <tr>
+  <td></td>
+	<td style="border-bottom:1px dotted silver">{$vo.title} <span style="color:gray">[{$vo.username} {$vo.create_time|date='Y-m-d H:i:s',###}]</span></td>
+  </tr>
+  <tr >
+  <td></td>
+	<td><div class="content">{$vo.content|nl2br}</div></td>
+  </tr>
+  </volist>
+ <tr>
+ <td></td>
+	<td><hr> 示例源码<br/>控制器IndexAction类<br/><php>highlight_file(LIB_PATH.'Action/IndexAction.class.php');</php><br/>模型FormViewModel类<br/><php>highlight_file(LIB_PATH.'Model/FormViewModel.class.php');</php></td>
+ </tr>
+ </table>
+</div>
+ </body>
+</html>

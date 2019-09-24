@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ThinkPHP示例：静态页面生成</title>
+<link rel='stylesheet' type='text/css' href='__PUBLIC__/Css/common.css'>
+ </head>
+ <body>
+ <div class="main">
+ <h2>ThinkPHP示例之：静态页面生成</h2>
+设置页面生成静态和有效期<br/>
+ <table  cellpadding=3 cellspacing=3>
+  <tr>
+	<td><div class="result" style="color:red">当前时间：{:date('H:i:s',time())}</div></td>
+ </tr>
+ <tr>
+	<td class="tLeft" ><a href="javascript:location.reload()">刷新页面</a> 后注意看时间是否有变化</td>
+ </tr>
+ <tr>
+	<td><hr> 示例源码<br/>配置文件config.php<br/><php>highlight_file(APP_PATH.'/Conf/config.php');</php><br/>
+	静态定义文件htmls.php <br/><php>highlight_file(APP_PATH.'/Conf/htmls.php');</php><br/>
+	控制器IndexAction类<br/><php>highlight_file(LIB_PATH.'Action/IndexAction.class.php');</php>
+	</td>
+ </tr>
+ </table>
+</div>
+ </body>
+</html>
